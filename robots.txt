@@ -1,0 +1,22 @@
+# robots.txt for Marian Dumitru CV Portfolio
+# Allows all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /projects/demos/
+
+# Sitemap location
+Sitemap: https://marian-cv-premium.pages.dev/sitemap.xml
+
+# Crawl delay (be respectful to servers)
+Crawl-delay: 1
+
+# Allow specific bots with faster crawl rates
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
