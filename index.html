@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marian Dumitru - CV Online Premium | IT Project, Digital Ops, UX/UI</title>
+  <meta name="description" content="CV online premium pentru angajare: IT Project, Digital Ops, UX/UI Figma, AI automation, REST APIs, JavaScript, Python, Java, CSS, Mobile, Node.js." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+
+<body>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__name">Marian Dumitru</span>
+        <span class="brand__role">IT Project • Digital Ops • UX/UI (Figma) • AI Integrations</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="#profil">Profil</a>
+        <a class="nav__link" href="#skills">Competente</a>
+        <a class="nav__link" href="#experienta">Experienta</a>
+        <a class="nav__link" href="#studii">Studii & Certificari</a>
+        <a class="nav__link" href="#portofoliu">Proiecte</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn--ghost" href="projects/index.html">Portofoliu</a>
+        <button class="btn btn--primary" id="btnPdf" type="button">Export CV PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero reveal">
+      <div class="hero__left">
+        <div class="badge">Disponibil pentru angajare • Full-time / Contract</div>
+        <h1 class="h1">Carte de vizita profesionala: proiecte digitale moderne, livrate clar si auditabil.</h1>
+        <p class="lead" id="profil">
+          Specialist in implementare IT si digitalizare, cu experienta extinsa in <strong>JavaScript, Python, Java, CSS, Mobile si Node.js</strong>.
+          Experienta practica in <strong>UX/UI workflow in Figma</strong> (wireframes, prototipuri, handoff) si focus pe
+          <strong>AI automation</strong>, <strong>REST APIs</strong>, <strong>webhooks</strong>, <strong>data pipelines</strong>, <strong>system integration</strong>.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--secondary" href="#portofoliu">Vezi proiecte relevante</a>
+          <a class="btn btn--ghost" href="#contact">Contact rapid</a>
+        </div>
+
+        <div class="figma-strip reveal" aria-label="capabilitati figma">
+          <span class="figma-pill">UX Research</span>
+          <span class="figma-pill">Wireframes</span>
+          <span class="figma-pill">Figma Prototypes</span>
+          <span class="figma-pill">Design System</span>
+          <span class="figma-pill">Dev Handoff</span>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <div class="stat__kpi">19+ ani</div>
+            <div class="stat__label">experienta in medii reglementate si executie operationala</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__kpi">IT + Business</div>
+            <div class="stat__label">aliniere stakeholderi, procese si implementare tehnica</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__kpi">Delivery Focus</div>
+            <div class="stat__label">KPI, risk tracking, SLA, comunicare executiva</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__card reveal">
+        <div class="card">
+          <div class="card__top">
+            <div>
+              <div class="card__name">Marian Dumitru</div>
+              <div class="card__title">IT Project / Digital Ops / UX-UI / AI Integrations</div>
+            </div>
+            <div class="card__badge">
+              <figure class="avatar" aria-label="Fotografie profil CV">
+                <img src="Imagine%20CV.jpg" alt="Marian Dumitru - fotografie profil" />
+              </figure>
+              <div class="pill">Romania</div>
+            </div>
+          </div>
+
+          <div class="card__grid">
+            <div class="kv">
+              <div class="kv__k">Telefon</div>
+              <div class="kv__v"><a href="tel:+40752130020">0752 130 020</a></div>
+            </div>
+            <div class="kv">
+              <div class="kv__k">Email</div>
+              <div class="kv__v"><a href="mailto:thetechologyhub@gmail.com">thetechologyhub@gmail.com</a></div>
+            </div>
+            <div class="kv">
+              <div class="kv__k">Portofoliu</div>
+              <div class="kv__v"><a href="projects/index.html">projects/</a></div>
+            </div>
+            <div class="kv">
+              <div class="kv__k">Linked Focus</div>
+              <div class="kv__v">IT Project • Digital Ops • UX/UI</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="mini">
+            <div class="mini__h">Keywords HR / ATS</div>
+            <ul class="mini__list">
+              <li>IT Project Management, Digital Operations, UX/UI, Figma.</li>
+              <li>AI automation, workflow automation, OCR, decision support.</li>
+              <li>REST APIs, webhooks, data pipelines, system integration.</li>
+              <li>JavaScript, Python, Java, CSS, Mobile, Node.js.</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <div class="section__head">
+        <h2 class="h2">Core Skills 🔧</h2>
+        <p class="muted">Structurate pentru roluri cautate in baze HR: IT Project, Digital Ops, Product Delivery.</p>
+      </div>
+
+      <div class="grid3">
+        <article class="box reveal">
+          <div class="box__t">Frontend Engineering</div>
+          <div class="box__p">JavaScript, CSS architecture, UI dashboards, design-to-code execution.</div>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">Responsive UI</span></div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">UX/UI & Figma</div>
+          <div class="box__p">User flows, wireframes, prototypes, design systems, handoff eficient catre development.</div>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">UX/UI</span><span class="tag">Handoff</span></div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Backend & APIs</div>
+          <div class="box__p">Python, Java, Node.js, REST APIs, webhooks, integrare de date intre sisteme.</div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Node.js</span></div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Mobile & Field Apps</div>
+          <div class="box__p">React Native/Flutter framing, offline sync, inspectii si colectare date din teren.</div>
+          <div class="tags"><span class="tag">Mobile</span><span class="tag">Offline Sync</span><span class="tag">Field Ops</span></div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">AI & Automation</div>
+          <div class="box__p">AI automation, OCR workflows, sumarizare documente, decision support pipelines.</div>
+          <div class="tags"><span class="tag">AI Automation</span><span class="tag">OCR</span><span class="tag">Workflow</span></div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Management & Communication</div>
+          <div class="box__p">KPI reporting, risk tracking, SLA follow-up, stakeholder communication, governance.</div>
+          <div class="tags"><span class="tag">KPI</span><span class="tag">SLA</span><span class="tag">Stakeholders</span></div>
+        </article>
+      </div>
+
+      <div class="keyword-cloud reveal">
+        <span class="tag">IT Project Manager</span>
+        <span class="tag">Digital Operations</span>
+        <span class="tag">Product Delivery</span>
+        <span class="tag">Agile Workflow</span>
+        <span class="tag">System Integration</span>
+        <span class="tag">Technical Consultant</span>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experienta">
+      <div class="section__head">
+        <h2 class="h2">Experienta Profesionala 📈</h2>
+        <p class="muted">Format digestibil pentru HR: rol, perioada, context, contributie.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Information Technology Specialist • BCR (Liber-profesionist)</div>
+              <div class="job__meta">mai 2006 - sept. 2025 • 19 ani 5 luni • Bucuresti</div>
+            </div>
+            <div class="job__pill">IT Delivery</div>
+          </div>
+          <ul class="bullets">
+            <li>Implementare si suport procese IT auditabile in medii cu cerinte ridicate de conformitate.</li>
+            <li>Coordonare executie tehnica + comunicare business pentru continuitate operationala.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Mentor / Formator Digital Marketing • BestJobs Grow</div>
+              <div class="job__meta">mar. 2021 - iul. 2025 • 4 ani 5 luni • Romania, hibrid</div>
+            </div>
+            <div class="job__pill">Mentoring</div>
+          </div>
+          <ul class="bullets">
+            <li>Training aplicat pe dezvoltare web, React.js si bune practici de livrare proiecte.</li>
+            <li>Structurare continut de invatare orientat pe rezultate practice.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Expert Bitrix • Mage Check SRL</div>
+              <div class="job__meta">mar. 2019 - mar. 2025 • 6 ani 1 luna</div>
+            </div>
+            <div class="job__pill">Backend + CMS</div>
+          </div>
+          <ul class="bullets">
+            <li>Stack: PHP, MySQL, HTML5, CSS3, Apache, Ubuntu; toolchain: Jira, Slack, Trello.</li>
+            <li>Implementari si mentenanta pe Magento 1/2, plus integrari comerciale si operationale.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Specialist PR & Fundraising • Asociatia Grupul Verde</div>
+              <div class="job__meta">feb. 2020 - ian. 2025 • 5 ani • Romania</div>
+            </div>
+            <div class="job__pill">PR + Ops</div>
+          </div>
+          <ul class="bullets">
+            <li>Comunicare institutionala, raportare stakeholderi, coordonare initiative digitale.</li>
+            <li>Sustinere implementari web si materiale de comunicare orientate pe impact.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Formator Technology Technical Consultant • Tribuna Impressa Araraquara</div>
+              <div class="job__meta">apr. 2019 - ian. 2025 • 5 ani 10 luni • Romania</div>
+            </div>
+            <div class="job__pill">Training</div>
+          </div>
+          <ul class="bullets">
+            <li>Training tehnic pe dezvoltare aplicatii si workflow-uri moderne de implementare.</li>
+            <li>Transfer de know-how pe React.js, UX flow si integrare procese digitale.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="studii">
+      <div class="section__head">
+        <h2 class="h2">Studii 🎓</h2>
+        <p class="muted">Selectie relevanta pentru HR, fara incarcare inutila.</p>
+      </div>
+      <div class="grid2">
+        <article class="box reveal">
+          <div class="box__t">Artifex of Bucharest</div>
+          <div class="box__p">Finante si banci, Banking and Financial Support Services • 2017.</div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Universitatea Romano-Americana din Bucuresti</div>
+          <div class="box__p">Comunicare sociale si civice • 2008 - 2009 • Nota 10.</div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Centru de Pregatire Informatica</div>
+          <div class="box__p">Formator autorizat COR 242401 • acreditare ANC • 2012.</div>
+        </article>
+        <article class="box reveal">
+          <div class="box__t">Extreme Training SRL</div>
+          <div class="box__p">Inspector Resurse Umane (COR 333304) • acreditare ANC • 2011 - 2012.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="atestate">
+      <div class="section__head">
+        <h2 class="h2">Atestate Selective 🏅</h2>
+        <p class="muted">Top certificari relevante pentru pozitionare tehnica + operationala.</p>
+      </div>
+      <div class="grid2">
+        <article class="box reveal"><div class="box__t">Graphic Design Essentials • Canva (2025)</div><div class="box__p">ID acreditare: 3134ac.</div></article>
+        <article class="box reveal"><div class="box__t">SQL for Non-Programmers • LinkedIn (2022)</div><div class="box__p">Competente utile pentru raportare si analiza.</div></article>
+        <article class="box reveal"><div class="box__t">Curs Python Advanced • Python Academy (2020)</div><div class="box__p">ID: PY-5210/2020.</div></article>
+        <article class="box reveal"><div class="box__t">Google Play Console / Android Developers (2018-2019)</div><div class="box__p">Google Developers Group + Google for Developers.</div></article>
+        <article class="box reveal"><div class="box__t">SANS Security Awareness (2016)</div><div class="box__p">Security fundamentals pentru medii operationale.</div></article>
+        <article class="box reveal"><div class="box__t">Climate Reality Leadership Corps (2022)</div><div class="box__p">Capabilitati de comunicare si leadership in initiative publice.</div></article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="portofoliu">
+      <div class="section__head">
+        <h2 class="h2">Proiecte Demonstrabile 🚀</h2>
+        <p class="muted">Selectie de proiecte unde se vede direct expertiza in tehnologii noi.</p>
+      </div>
+
+      <div class="grid2 evidence">
+        <a class="case reveal" href="projects/fleet-management.html">
+          <div class="case__title">Fleet Management (demo)</div>
+          <div class="case__meta">Role focus: Operations + dashboard + alerts</div>
+          <div class="case__chips"><span class="chip">Operations</span><span class="chip">KPI</span><span class="chip">Risk</span></div>
+          <div class="case__more">Demo -></div>
+        </a>
+        <a class="case reveal" href="projects/logistics-api-python.html">
+          <div class="case__title">Logistics API (Python)</div>
+          <div class="case__meta">Role focus: backend integrations, data flow, reporting</div>
+          <div class="case__chips"><span class="chip">Python</span><span class="chip">REST APIs</span><span class="chip">Data Pipelines</span></div>
+          <div class="case__more">Demo -></div>
+        </a>
+        <a class="case reveal" href="projects/permit-safety-java.html">
+          <div class="case__title">Permise & HSE (Java)</div>
+          <div class="case__meta">Role focus: compliance workflows, auditability</div>
+          <div class="case__chips"><span class="chip">Java</span><span class="chip">Workflow</span><span class="chip">Compliance</span></div>
+          <div class="case__more">Demo -></div>
+        </a>
+        <a class="case reveal" href="projects/integration-hub-node.html">
+          <div class="case__title">Integration Hub (Node.js)</div>
+          <div class="case__meta">Role focus: webhooks, orchestration, alerts</div>
+          <div class="case__chips"><span class="chip">Node.js</span><span class="chip">Webhooks</span><span class="chip">System Integration</span></div>
+          <div class="case__more">Demo -></div>
+        </a>
+      </div>
+
+      <div class="note">
+        Portofoliu complet: <a href="projects/index.html"><strong>projects/index.html</strong></a> • Include filtre pe Frontend, UX/UI, Backend, Mobile, AI, Operations.
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="contact">
+        <div>
+          <h2 class="h2">Contact & Disponibilitate</h2>
+          <p class="muted">Deschis pentru roluri IT Project / Digital Ops / Product Delivery. Disponibil pentru discutie tehnica si interviu.</p>
+        </div>
+        <div class="contact__box">
+          <div class="kv2"><div class="kv2__k">Telefon</div><div class="kv2__v"><a href="tel:+40752130020">0752 130 020</a></div></div>
+          <div class="kv2"><div class="kv2__k">Email</div><div class="kv2__v"><a href="mailto:thetechologyhub@gmail.com">thetechologyhub@gmail.com</a></div></div>
+          <div class="kv2"><div class="kv2__k">Profil</div><div class="kv2__v">IT Project • Digital Ops • UX/UI</div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Marian Dumitru • Premium CV + Portfolio</span>
+    </footer>
+
+    <section id="pdfResume" class="pdf-resume" aria-hidden="true">
+      <div class="pdf-resume__page">
+        <h1>Marian Dumitru</h1>
+        <p><strong>Target:</strong> IT Project / Digital Ops / UX-UI (Figma)</p>
+        <p><strong>Email:</strong> thetechologyhub@gmail.com | <strong>Telefon:</strong> 0752 130 020</p>
+
+        <h2>Profil</h2>
+        <p>
+          Specialist in implementare IT si digital operations, cu experienta extinsa pe JavaScript, Python, Java, CSS, Mobile, Node.js.
+          Competente solide in UX/UI Figma, AI automation, REST APIs, webhooks, data pipelines si system integration.
+        </p>
+
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Frontend: JavaScript, CSS, dashboards, design-to-code</li>
+          <li>UX/UI: Figma workflow, prototyping, design system, dev handoff</li>
+          <li>Backend: Python, Java, Node.js, REST APIs, webhooks</li>
+          <li>Mobile: React Native / Flutter framing, offline sync</li>
+          <li>Delivery: KPI reporting, risk tracking, SLA, stakeholder communication</li>
+        </ul>
+
+        <p><strong>CV generat la descarcare:</strong> <span id="pdfGeneratedAt">-</span></p>
+
+        <h2>Experienta (selectiv)</h2>
+        <ul>
+          <li><strong>BCR (2006-2025):</strong> Information Technology Specialist, delivery IT, auditabilitate.</li>
+          <li><strong>BestJobs Grow (2021-2025):</strong> mentor/formator digital, React.js si dezvoltare web.</li>
+          <li><strong>Mage Check (2019-2025):</strong> Expert Bitrix, PHP/MySQL, Magento, toolchain Jira/Slack/Trello.</li>
+        </ul>
+
+        <h2>Studii</h2>
+        <ul>
+          <li>Artifex of Bucharest (Finante si banci, 2017)</li>
+          <li>Universitatea Romano-Americana (Comunicare sociale si civice, 2008-2009)</li>
+          <li>Formator autorizat ANC (COR 242401), 2012</li>
+          <li>Inspector Resurse Umane ANC (COR 333304), 2011-2012</li>
+        </ul>
+
+        <h2>Atestate (HR focus)</h2>
+        <ul>
+          <li>Graphic Design Essentials (Canva, 2025) • SQL for Non-Programmers (LinkedIn, 2022)</li>
+          <li>Curs Python Advanced (Python Academy, 2020) • Android Developers (Google, 2018-2019)</li>
+        </ul>
+
+        <h2>Portofoliu selectiv (4 proiecte)</h2>
+        <ul>
+          <li>Fleet Management (Operations dashboard)</li>
+          <li>Logistics API (Python, APIs, reporting)</li>
+          <li>Permise & HSE (Java, workflow compliance)</li>
+          <li>Integration Hub (Node.js, webhooks, orchestration)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <a class="call-fab" href="tel:+40752130020" aria-label="Sună la 0752130020" title="Sună acum">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.9 15.9 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.29.56 3.48.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.19.19 2.37.56 3.48a1 1 0 0 1-.24 1.01l-2.2 2.3Z"/>
+    </svg>
+  </a>
+</body>
+</html>

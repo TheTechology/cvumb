@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Operațional (demo) — Case Study</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Dashboard Operațional (demo)</span>
+        <span class="brand__role">KPI • status • risc • export PDF</span>
+      </a>
+      <div class="actions">
+        <a class="btn btn--ghost" href="index.html">Înapoi</a>
+        <a class="btn btn--ghost" href="../index.html">CV</a>
+        <a class="btn btn--secondary" href="mailto:thetechologyhub@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__head">
+        <div class="kicker">Case Study (demo)</div>
+        <h2 class="h2">Rezumat</h2>
+        <p class="muted">Managementul are nevoie de claritate în progres. Am modelat un dashboard simplu cu KPI + riscuri. Rezultat: status săptămânal rapid, fără interpretări.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="box">
+          <div class="box__t">Problemă</div>
+          <div class="box__p">Lipsă vizibilitate centrală pe șantier, costuri, termene și blocaje.</div>
+        </div>
+        <div class="box">
+          <div class="box__t">Soluție</div>
+          <div class="box__p">Dashboard cu KPI, progres, risc, deviații și next‑step.</div>
+        </div>
+        <div class="box">
+          <div class="box__t">Rezultat</div>
+          <div class="box__p">Decizii mai rapide, raportare standard, escaladare clară.</div>
+        </div>
+      </div>
+
+      <div class="section__head" style="margin-top:14px">
+        <h2 class="h2">Integrations</h2>
+        <p class="muted">Ce se vede “în spate”: flux, date, notificări, tracking.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="job">
+          <div class="job__top">
+            <div>
+              <div class="job__role">KPI model</div>
+              <div class="job__meta">indicatori pentru livrabile, resurse, cost/time</div>
+            </div>
+            <div class="job__pill">KPI</div>
+          </div>
+          <ul class="bullets">
+            <li>KPI pe proiect / echipă / perioadă.</li>
+            <li>Semaforizare risc: low/med/high.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top">
+            <div>
+              <div class="job__role">Status workflow</div>
+              <div class="job__meta">status standard + ownership + next step</div>
+            </div>
+            <div class="job__pill">FLOW</div>
+          </div>
+          <ul class="bullets">
+            <li>Next‑step clar (cine face ce până când).</li>
+            <li>Evidență blocaje și escaladare.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top">
+            <div>
+              <div class="job__role">PDF export</div>
+              <div class="job__meta">raport pentru management, trimis pe email</div>
+            </div>
+            <div class="job__pill">REPORT</div>
+          </div>
+          <ul class="bullets">
+            <li>Export A4, scurt și repetabil.</li>
+            <li>Ușor de arhivat și de urmărit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section__head" style="margin-top:14px">
+        <h2 class="h2">Architecture (simplu)</h2>
+        <p class="muted">O schemă clară, pe înțelesul managementului.</p>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Flow</div>
+        <ul class="bullets" style="margin-top:10px">
+          <li>Data input (formular / import) → model KPI</li>
+          <li>Dashboard UI → export PDF</li>
+          <li>Distribuție: email/drive + arhivă</li>
+        </ul>
+      </div>
+
+      <div class="section__head" style="margin-top:14px">
+        <h2 class="h2">Demo vizual</h2>
+        <p class="muted">Snapshot KPI pentru management.</p>
+      </div>
+
+      <div class="card">
+        <div class="kicker">KPI săptămânal</div>
+        <div class="grid3" style="margin-top:10px">
+          <div class="box">
+            <div class="box__t">Progres total</div>
+            <div class="box__p">62% • trend ↑</div>
+          </div>
+          <div class="box">
+            <div class="box__t">Blocaje</div>
+            <div class="box__p">4 • critic 1</div>
+          </div>
+          <div class="box">
+            <div class="box__t">Cost vs plan</div>
+            <div class="box__p">+3.2%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:12px">
+        <strong>Link‑uri:</strong><br/>
+        <div style="margin-top:8px; line-height:1.7; font-weight:700">
+          • Demo: (completează)<br/>• Repo: (completează)
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

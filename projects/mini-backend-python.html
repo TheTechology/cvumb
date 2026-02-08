@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Proiect Backend (Python) — Logistics API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Mini Proiect Backend (Python)</span>
+        <span class="brand__role">logistică • stocuri • livrări</span>
+      </a>
+      <div class="actions">
+        <a class="btn btn--ghost" href="index.html">Înapoi</a>
+        <a class="btn btn--ghost" href="../index.html">CV</a>
+        <a class="btn btn--secondary" href="mailto:thetechologyhub@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__head">
+        <div class="kicker">Mini proiect (Python)</div>
+        <h2 class="h2">Logistics API</h2>
+        <p class="muted">API pentru trasabilitatea materialelor, esențial în proiecte mari de infrastructură.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="box">
+          <div class="box__t">Cerințe UMB‑style</div>
+          <div class="box__p">Control stocuri, consum, livrări pe șantier.</div>
+        </div>
+        <div class="box">
+          <div class="box__t">Livrabil</div>
+          <div class="box__p">API cu endpoint‑uri clare + audit.</div>
+        </div>
+        <div class="box">
+          <div class="box__t">Valoare</div>
+          <div class="box__p">Reducere pierderi, raportare unitară.</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="kicker">Spec API (exemplu)</div>
+        <ul class="bullets" style="margin-top:10px">
+          <li>GET /stock → listă materiale</li>
+          <li>POST /deliveries → înregistrare livrare</li>
+          <li>GET /reports/monthly → raport consum</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="kicker">Răspuns API (mock)</div>
+        <pre style="margin:10px 0 0; white-space:pre-wrap; font-weight:600">{\n  \"items\": [\n    {\"id\": \"MAT-001\", \"name\": \"Asfalt\", \"qty\": 120, \"unit\": \"t\"},\n    {\"id\": \"MAT-002\", \"name\": \"Piatra\", \"qty\": 300, \"unit\": \"t\"}\n  ]\n}</pre>
+      </div>
+
+      <div class="note" style="margin-top:12px">
+        <strong>Tehnologii:</strong> Python, FastAPI, PostgreSQL, OpenAPI.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
